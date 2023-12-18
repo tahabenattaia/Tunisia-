@@ -1,0 +1,490 @@
+  *{
+    margin: 0;
+    padding: 0;
+    
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  body,html{
+    overflow-x: hidden;
+   }
+  #banner {
+    background: linear-gradient(rgba(65, 61, 61, 0.6), rgba(35, 35, 35, 0.2)),  url("images/banner.jpg")  no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    height: 100vh;
+  }
+  .logo{
+    width:120px;
+    position: absolute;
+    top: 3%;
+    left: 6%;
+  }
+  .banner-text{
+    text-align: center;
+    color:#fb8500;
+    padding-top: 180px;
+  }
+  .banner-text h1{
+    font-size: 130px;
+  }
+  .banner-text p{
+    font-size:20px;
+    font-style: italic;
+  }
+  .banner-btn{
+    margin: 70px auto 0 ;
+  }
+  .banner-btn a{
+    width:150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #fff;
+    border:.5px solid #fff;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+  }
+  .banner-btn a span{
+       width: 0;
+       height: 100%;
+       position: absolute;
+       top: 0;
+       left: 0;
+       background: #fff;
+       z-index: -1;
+       transition:0.5s ;
+  }
+  .banner-btn a:hover span{
+    width: 100%;
+  }
+  .banner-btn a:hover{
+    color: #000;
+  }
+  #sidenav{
+    width: 250px;
+    height: 100vh;
+    position: absolute;
+    right: -250px;
+    top: 0;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+    z-index: 2;
+    transition: 0.5s;
+  }
+  nav ul li{
+    list-style: none;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: #fff;
+  }
+  #sidenav nav ul li{
+    padding: 10px 6px;
+  }
+  #sidenav nav ul li:hover{
+    border-right: 1px solid #fff;
+    box-shadow: 0 0 4px #fb8500;
+    color: #000;
+  }
+  #container {
+    display: inline-block;
+    cursor: pointer;
+    top: 20px;
+    right: 30px;
+    text-align: center;
+    z-index: 3;
+    position: absolute;
+    margin-top: 15px;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #003049;
+    margin: 6px 0;
+    transition: 0.5s;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+  #carte{
+    width: 100%;
+    padding: 70px 0 ;
+  }
+  .title-text{
+    text-align: center;
+    padding-bottom: 70px;
+    z-index: 2;
+
+  }
+  .title-text h1{
+   margin-top: 20px;
+   font-size: 50px;
+   color:#007f5f;
+   font-weight: bolder;
+   position: relative;
+   text-transform: uppercase;
+  }
+  .line{
+    width: 200px;
+    height: 4px;
+    background:#c9ffe2 ;
+    margin: 10px auto;
+    border-radius: 5px;
+  }
+  .title-text p{
+    margin: auto;
+    font-size: 17px;
+    font-weight: bolder;
+    color:grey;
+   }
+   .carteg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    height: 550px;
+    background: white;
+    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+    color: white;
+    box-shadow: 20px 20px rgba(0,0,0,.15);
+    transition: all .4s ease;
+   }
+   .carteg:hover {
+    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% 
+   }
+   .geographie{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    --c: #04e762; 
+    --b: 10px;    
+    --g: 5px;     
+    
+    padding: calc(var(--g) + var(--b));
+    --_g: #0000 25%,var(--c) 0;
+    background: 
+      conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g))
+       var(--_i,200%) 0  /200% var(--_i,var(--b))  no-repeat,
+      conic-gradient(            at bottom var(--b) left  var(--b),var(--_g))
+       0   var(--_i,200%)/var(--_i,var(--b)) 200%  no-repeat;
+    transition: .3s, background-position .3s .3s;
+    cursor: pointer;
+  }
+  .geographie:hover {
+    --_i: 100%;
+    transition: .3s, background-size .3s .3s;
+  }
+   .parageo{
+    flex-basis: 50%;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+   .geogra{
+    flex-basis: 50%;
+    margin: auto;
+   }
+   .geogra img{
+    width: 120%;
+    border-radius: 20px;
+   }
+   .histoire{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    --c: #04e762; 
+    --b: 10px;    
+    --g: 5px;     
+    
+    padding: calc(var(--g) + var(--b));
+    --_g: #0000 25%,var(--c) 0;
+    background: 
+      conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g))
+       var(--_i,200%) 0  /200% var(--_i,var(--b))  no-repeat,
+      conic-gradient(            at bottom var(--b) left  var(--b),var(--_g))
+       0   var(--_i,200%)/var(--_i,var(--b)) 200%  no-repeat;
+    transition: .3s, background-position .3s .3s;
+    cursor: pointer;
+  }
+  .histoire:hover {
+    --_i: 100%;
+    transition: .3s, background-size .3s .3s;
+  }
+   .parahis{
+    flex-basis: 50%;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+   .hist{
+    flex-basis: 50%;
+    margin: auto;
+   }
+   .hist img{
+    width:100%;
+    border-radius: 20px;
+   }
+   .economie{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    --c: #04e762; 
+    --b: 10px;    
+    --g: 5px;     
+    
+    padding: calc(var(--g) + var(--b));
+    --_g: #0000 25%,var(--c) 0;
+    background: 
+      conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g))
+       var(--_i,200%) 0  /200% var(--_i,var(--b))  no-repeat,
+      conic-gradient(            at bottom var(--b) left  var(--b),var(--_g))
+       0   var(--_i,200%)/var(--_i,var(--b)) 200%  no-repeat;
+    transition: .3s, background-position .3s .3s;
+    cursor: pointer;
+  }
+  .economie:hover {
+    --_i: 100%;
+    transition: .3s, background-size .3s .3s;
+  }
+   .paraeco{
+    flex-basis: 50%;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+   .eco{
+    flex-basis: 50%;
+    margin: auto;
+   }
+   .eco img{
+    width:40%;
+    border-radius: 20px;
+   }
+   .culture{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    --c: #04e762; 
+    --b: 10px;    
+    --g: 5px;     
+    
+    padding: calc(var(--g) + var(--b));
+    --_g: #0000 25%,var(--c) 0;
+    background: 
+      conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g))
+       var(--_i,200%) 0  /200% var(--_i,var(--b))  no-repeat,
+      conic-gradient(            at bottom var(--b) left  var(--b),var(--_g))
+       0   var(--_i,200%)/var(--_i,var(--b)) 200%  no-repeat;
+    transition: .3s, background-position .3s .3s;
+    cursor: pointer;
+  }
+  .culture:hover {
+    --_i: 100%;
+    transition: .3s, background-size .3s .3s;
+  }
+   .paracul{
+    flex-basis: 50%;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+   .cul{
+    flex-basis: 50%;
+    margin: auto;
+   }
+   .cul img{
+    width:80%;
+    border-radius: 20px;
+   }
+   .politique{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    --c: #04e762; 
+    --b: 10px;    
+    --g: 5px;     
+    
+    padding: calc(var(--g) + var(--b));
+    --_g: #0000 25%,var(--c) 0;
+    background: 
+      conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g))
+       var(--_i,200%) 0  /200% var(--_i,var(--b))  no-repeat,
+      conic-gradient(            at bottom var(--b) left  var(--b),var(--_g))
+       0   var(--_i,200%)/var(--_i,var(--b)) 200%  no-repeat;
+    transition: .3s, background-position .3s .3s;
+    cursor: pointer;
+  }
+  .politique:hover {
+    --_i: 100%;
+    transition: .3s, background-size .3s .3s;
+  }
+   .parapol{
+    flex-basis: 50%;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+   .pol{
+    flex-basis: 50%;
+    margin: auto;
+   }
+   .pol img{
+    width:100%;
+    border-radius: 20px;
+   }
+   .slider{
+    margin: 150px auto;
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+     width: 200px;
+     height: 200px;
+     transform-style:preserve-3d ;
+     animation: rotate 30s linear infinite;
+   }
+   @keyframes rotate{
+    0%{
+      transform: perspective(1000px) rotateY(0deg); 
+    }
+    100%{
+      transform: perspective(1000px) rotateY(360deg); 
+    }
+   }
+   .slider span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+   }
+   .slider span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    object-fit: cover;
+    transition: 2s;
+   }
+   .slider span:hover img{
+    transform: translateY(-50px) scale(1.2);
+   }
+   ::-webkit-scrollbar{
+    width: 1.2em;
+   }
+   ::-webkit-scrollbar-track{
+    background-color: #fff;
+    border-radius: 100vw;
+    margin-block: .2em;
+   }
+   ::-webkit-scrollbar-thumb{
+    background: linear-gradient(to top, #0f2027, #203a43, #2c5364);
+    border: .25em solid #f5f3f4;
+    border-radius: 100vw;
+   }
+   ::-webkit-scrollbar-thumb:hover{
+    background:#495057; 
+   }
+  #progress{
+    position: fixed;
+    bottom:20px;
+    right: 15px;
+    height: 70px;
+    width: 70px;
+    display: none;
+    place-items:center ;
+    border-radius:50% ;
+    box-shadow: 0 0 10px rgba(0,0,0,.15);
+    cursor: pointer;
+  } 
+  #progress-value{
+    display: block;
+    height:calc(100% - 15px) ;
+    width:calc(100% - 15px) ;
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size:35px ;
+    color:#aacc00 ;
+  }
+  footer{
+    background-color:#abff4f ;
+    line-height: 24px;
+    color: #1b512d;
+  }
+  footer .footer{
+    padding: 16px;
+    padding-top: 48px;
+    background-color: #04e762;
+    clip-path: polygon(0% 5%,15% 0%,100% 10%,100% 100%,0% 100%);
+  }
+  footer .content{
+    max-width: 1080px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+  }
+   footer header{
+    font-size: 21px;
+    padding-block: 16px;
+    font-weight: bolder;
+    text-transform: uppercase;
+   }
+ footer .content a{
+  display: block;
+  padding-block: 12px;
+  color: #eef2f3;
+  opacity: 0.65;
+  text-decoration: none;
+ }
+ footer .content a:hover{
+  color: #000;
+  opacity: 1;
+  font-size: 18px;
+ }
+ footer .notice{
+  text-align: center;
+  padding: 24px;
+ }
+ footer .notice strong{
+  color: #000;
+  text-transform: uppercase;
+ }

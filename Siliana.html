@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Siliana.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f30e80016e.js" crossorigin="anonymous"></script>
+    <title>Siliana</title>
+</head>
+<body>
+    <header class="header">
+        <div class="imgh">
+             <img alt="+216" title="bienvenue en Tunisie " src="images/+216__1_-removebg-preview.png" class="logo">
+             <h3>Il est l'heure de visiter</h3>
+             <h1>SILIANA</h1>
+             <div class="banner">
+                <a href="#localisation"><span></span>en savoir plus</a>
+              </div>
+             <div class="menu">
+             <input type="checkbox" id="toggle">
+             <label for="toggle" id="show">
+                <div class="btn">
+                    <i title="menu" class="fa-solid fa-bars material-icons md-36 menuBtn"></i>
+                    <i title="menu"  class="fa-solid fa-xmark material-icons md-36 closeBtn"></i>
+                </div>
+                <div class="btn">
+                    <a class="lien" href="accueil.html"><i title="accueil" class="fa-solid fa-house material-icons md-36"></i></a>
+                </div>
+                <div class="btn">
+                    <a href="#localisation"><i title="localisation" class="fa-solid fa-location-dot material-icons md-36 "></i></a>
+                </div>
+                <div class="btn">
+                    <a href="#histoire"><i title="histoire" class="fa-sharp fa-solid fa-landmark-dome material-icons md-36"></i></a>
+                </div>
+                <div class="btn">
+                    <a href="#culture"><i title="culture" class="fa-solid fa-masks-theater material-icons md-36"></i></a>
+                </div>
+                <div class="btn">
+                    <a  href="#photos"><i title="photos" class="fa-solid fa-image material-icons md-36"></i></a>
+                </div>
+            </label>
+            </div> 
+       </div>
+    </header>
+    
+        <div id="localisation" class="h1">
+            <h1>Localisation</h1>
+          </div>
+    <section class="localisation">
+        <div class="local">
+            <div class="paralocal">
+              <p>Le gouvernorat de Siliana, créé le 5 juin 1974, est l'un des 24 gouvernorats de la Tunisie. Il est situé dans le nord-ouest du pays et couvre une superficie de 4 642 km2, soit 2,8 % de la superficie du pays. Il abrite en 2014 une population de 223 087 habitants. Son chef-lieu est Siliana.
+                </p>
+           </div>
+          <div class="bim">
+             <img src="images/siliana loc.gif" title="localisation de Siliana">
+          </div>
+        </div>
+    </section>
+    <div id="histoire" class="h1h">
+        <h1>histoire</h1>
+      </div>
+<section class="localisation">
+    <div class="local">
+        <div class="paralocal">
+          <p>Lorsque l’Islam s’est répandu en Afrique du Nord au 7ème siècle, de nombreuses factions Amazighs ont tenté de lutter contre cette invasion. Au cours de l’histoire, ils ont résisté dix fois à la progression de l’Islam, en faisant croire qu’ils allaient devenir musulmans. Mais de retour dans leurs villages, ils refusaient de pratiquer cette religion. Intentionnellement, ils ont construit des mosquées blanches bien visibles au sommet des montagnes pour tromper les envahisseurs musulmans. Alors qu’ils passaient, les musulmans, voyant la mosquée, pensaient que le village s’était déjà converti et ils continuaient leur chemin.
+            </p>
+       </div>
+      <div class="bim">
+         <img src="images/siliana hist.jpg" title="ville de Siliana">
+      </div>
+    </div>
+</section>
+<div id="culture" class="h1c">
+    <h1>culture</h1>
+  </div>
+<section class="localisation">
+<div class="local">
+    <div class="paralocal">
+      <p>Siliana est connue pour ses kilims tissés à la main, ses couvertures en laine ainsi que ses broderies.Sur le plan culinaire, la spécialité locale est préparée à base de mlawi coupé en morceaux et arrosé de sauce tomate et servi avec de la viande.
+        </p>
+   </div>
+  <div class="bim">
+     <img src="images/klim de siliana.jfif" title="klim de siliana">
+  </div>
+</div>
+</section>
+<div id="photos" class="h1p">
+    <h1>photos</h1>
+  </div>
+  <div class="slider">
+     <span style="--i:1;"><img title="kesra" src="images/kesra 1.jpg"></span>
+     <span style="--i:2;"><img title="kesra" src="images/kesra siliana.jpg"></span>
+     <span style="--i:3;"><img title="kesra" src="images/kesra.jpg"></span>
+     <span style="--i:4;"><img title="kesra" src="images/Kesra-à-Siliana.jpg"></span>
+     <span style="--i:5;"><img title="bouaarada" src="images/bouaarada siliana.jpeg"></span>
+     <span style="--i:6;"><img title="bargou" src="images/bargou.jpg"></span>
+     <span style="--i:7;"><img title="makthar" src="images/makthar siliana.jpg"></span>
+     <span style="--i:8;"><img title="siliana" src="images/siliana.jpg"></span>
+  </div>
+  <div id="progress">
+    <span id="progress-value">&#x21EA;</span>
+ </div>
+<section class="footer">
+    <div class="links">
+        <a href="accueil.html">Accueil</a>
+       <a href="#localisation">Localisation</a>
+       <a href="#histoire">Histoire</a>
+       <a href="#culture">Culture</a>
+       <a href="#photos">Photos</a>
+    </div>
+    <div class="credit">
+        copyright protected &copy; 
+            <strong style="text-transform: uppercase;">|Ben Attaia Med Taha 2bi 2022-2023</strong>
+    </div>
+</section>
+<script>
+   let calcScrollValue=()=>{
+        let scrollProgress=document.getElementById("progress");
+        let progressValue=document.getElementById("progress-value");
+        let pos = document.documentElement.scrollTop;
+        let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        let scrollValue = Math.round ((pos*100)/calcHeight);
+        if (pos>100){
+          scrollProgress.style.display="grid";
+        }
+        else{
+          scrollProgress.style.display="none";
+        }
+        scrollProgress.addEventListener("click",()=>{
+          document.documentElement.scrollTop =0;
+        })
+        scrollProgress.style.background=`conic-gradient( #936639 ${scrollValue}%,#7f4f24 ${scrollValue}%)`;
+      }
+      window.onscroll=calcScrollValue;
+      window.onload=calcScrollValue;
+      </script>
+</body>
+</html>

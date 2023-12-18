@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Kebili.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f30e80016e.js" crossorigin="anonymous"></script>
+    <title>Kebili</title>
+</head>
+<body>
+    <header class="header">
+        <div class="imgh">
+             <img alt="+216" title="bienvenue en Tunisie " src="images/+216__1_-removebg-preview.png" class="logo">
+             <h3>Il est l'heure de visiter</h3>
+             <h1>KEBILI</h1>
+             <div class="banner">
+                <a href="#localisation"><span></span>en savoir plus</a>
+              </div>
+             <div class="menu">
+             <input type="checkbox" id="toggle">
+             <label for="toggle" id="show">
+                <div class="btn">
+                    <i title="menu" class="fa-solid fa-bars material-icons md-36 menuBtn"></i>
+                    <i title="menu"  class="fa-solid fa-xmark material-icons md-36 closeBtn"></i>
+                </div>
+                <div class="btn">
+                    <a class="lien" href="accueil.html"><i title="accueil" class="fa-solid fa-house material-icons md-36"></i></a>
+                </div>
+                <div class="btn">
+                    <a href="#localisation"><i title="localisation" class="fa-solid fa-location-dot material-icons md-36 "></i></a>
+                </div>
+                <div class="btn">
+                    <a href="#histoire"><i title="histoire" class="fa-sharp fa-solid fa-landmark-dome material-icons md-36"></i></a>
+                </div>
+                <div class="btn">
+                    <a href="#culture"><i title="culture" class="fa-solid fa-masks-theater material-icons md-36"></i></a>
+                </div>
+                <div class="btn">
+                    <a  href="#photos"><i title="photos" class="fa-solid fa-image material-icons md-36"></i></a>
+                </div>
+            </label>
+            </div> 
+       </div>
+    </header>
+    
+        <div id="localisation" class="h1">
+            <h1>Localisation</h1>
+          </div>
+    <section class="localisation">
+        <div class="local">
+            <div class="paralocal">
+              <p>Le gouvernorat de Kébili, créé en septembre 19811, est l'un des 24 gouvernorats de la Tunisie. Il est situé dans le sud-ouest du pays, à la frontière algéro-tunisienne, et couvre une superficie de 22 454 km2, soit 13,5 % de la superficie du pays. Il abrite en 2014 une population de 156 961 habitants. Son chef-lieu est Kébili.
+                </p>
+           </div>
+          <div class="bim">
+             <img src="images/kebili loc.jpg" title="localisation de Kebili">
+          </div>
+        </div>
+    </section>
+    <div id="histoire" class="h1h">
+        <h1>histoire</h1>
+      </div>
+<section class="localisation">
+    <div class="local">
+        <div class="paralocal">
+          <p>Contrairement aux idées reçues, l'actuelle ville de Kébili est une création récente. Il s'agit d'une fondation coloniale française, établie en limite d'un talus qui marque l'extrémité des contreforts du Djebel Tebaga, ce modeste relief qui vient fermer le Nefzaoua dans sa partie septentrionale.
+            </p>
+       </div>
+      <div class="bim">
+         <img src="images/telmine kebili hist 1910.jpg" title="telmine 1910">
+      </div>
+    </div>
+</section>
+<div id="culture" class="h1c">
+    <h1>culture</h1>
+  </div>
+<section class="localisation">
+<div class="local">
+    <div class="paralocal">
+      <p>Ses activités économiques sont essentiellement l'agriculture, les oasis produisant les célèbres dattes deglet nour, et le tourisme avec le Sahara et ses dunes situées près de Douz.
+        Sa population active s'élève à 26 785 personnes reparties essentiellement entre l'agriculture (38,1 %), l'industrie manufacturière (21 %) et les services (41 %).
+        </p>
+   </div>
+  <div class="bim">
+     <img src="images/kebili cul.jfif" title="les dattes de Kebili">
+  </div>
+</div>
+</section>
+<div id="photos" class="h1p">
+    <h1>photos</h1>
+  </div>
+  <div class="slider">
+     <span style="--i:1;"><img title="centre ville de Kébili" src="images/kebili centre ville.jpg"></span>
+     <span style="--i:2;"><img title="desert de kebili" src="images/kebili desert.jpg"></span>
+     <span style="--i:3;"><img title="douz" src="images/kebili douz.jpg"></span>
+     <span style="--i:4;"><img title="palmiers de kebili" src="images/kebili palmiers.jpg"></span>
+     <span style="--i:5;"><img title="oasis de Kebili" src="images/Kebili oasis.jpg"></span>
+     <span style="--i:6;"><img title="chott el jerid" src="images/chott el jerid kebili.jpg"></span>
+     <span style="--i:7;"><img title="les chameaux de Kebili" src="images/les chameaux kebili.jpg"></span>
+     <span style="--i:8;"><img title="jardin de Golaa" src="images/jardin de Golaa.jpg"></span>
+  </div>
+  <div id="progress">
+    <span id="progress-value">&#x21EA;</span>
+ </div>
+<section class="footer">
+    <div class="links">
+        <a href="accueil.html">Accueil</a>
+       <a href="#localisation">Localisation</a>
+       <a href="#histoire">Histoire</a>
+       <a href="#culture">Culture</a>
+       <a href="#photos">Photos</a>
+    </div>
+    <div class="credit">
+        copyright protected &copy; 
+            <strong style="text-transform: uppercase;">|Ben Attaia Med Taha 2bi 2022-2023</strong>
+    </div>
+</section>
+<script>
+   let calcScrollValue=()=>{
+        let scrollProgress=document.getElementById("progress");
+        let progressValue=document.getElementById("progress-value");
+        let pos = document.documentElement.scrollTop;
+        let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        let scrollValue = Math.round ((pos*100)/calcHeight);
+        if (pos>100){
+          scrollProgress.style.display="grid";
+        }
+        else{
+          scrollProgress.style.display="none";
+        }
+        scrollProgress.addEventListener("click",()=>{
+          document.documentElement.scrollTop =0;
+        })
+        scrollProgress.style.background=`conic-gradient(#307f70 ${scrollValue}%,#649554 ${scrollValue}%)`;
+      }
+      window.onscroll=calcScrollValue;
+      window.onload=calcScrollValue;
+      </script>
+</body>
+</html>

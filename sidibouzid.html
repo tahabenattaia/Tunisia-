@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="sidibouzid.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f30e80016e.js" crossorigin="anonymous"></script>
+    <title>Sidi Bouzid</title>
+</head>
+<body>
+    <header class="header">
+        <div class="imgh">
+             <img alt="+216" title="bienvenue en Tunisie " src="images/+216__1_-removebg-preview.png" class="logo">
+             <h3>Il est l'heure de visiter</h3>
+             <h1>SIDI BOUZID</h1>
+             <div class="banner">
+                <a href="#localisation"><span></span>en savoir plus</a>
+              </div>
+             <div class="menu">
+             <input type="checkbox" id="toggle">
+             <label for="toggle" id="show">
+                <div class="btn">
+                    <i title="menu" class="fa-solid fa-bars material-icons md-36 menuBtn"></i>
+                    <i title="menu"  class="fa-solid fa-xmark material-icons md-36 closeBtn"></i>
+                </div>
+                <div class="btn">
+                    <a class="lien" href="accueil.html"><i title="accueil" class="fa-solid fa-house material-icons md-36"></i></a>
+                </div>
+                <div class="btn">
+                    <a href="#localisation"><i title="localisation" class="fa-solid fa-location-dot material-icons md-36 "></i></a>
+                </div>
+                <div class="btn">
+                    <a href="#histoire"><i title="histoire" class="fa-sharp fa-solid fa-landmark-dome material-icons md-36"></i></a>
+                </div>
+                <div class="btn">
+                    <a href="#culture"><i title="culture" class="fa-solid fa-masks-theater material-icons md-36"></i></a>
+                </div>
+                <div class="btn">
+                    <a  href="#photos"><i title="photos" class="fa-solid fa-image material-icons md-36"></i></a>
+                </div>
+            </label>
+            </div> 
+       </div>
+    </header>
+    
+        <div id="localisation" class="h1">
+            <h1>Localisation</h1>
+          </div>
+    <section class="localisation">
+        <div class="local">
+            <div class="paralocal">
+              <p>Le gouvernorat de Sidi Bouzid se situe au centre ouest du pays. Il est limité par les gouvernorats de Kairouan et Siliana au nord, Kasserine et Gafsa à l´ouest, Sfax à l´est et Gabès au sud. Etant donné ses caractéristiques climatiques et géographiques, la région possède plusieurs avantages comparatifs dans le secteur de l´agriculture qui la démarque des autres régions tunisiennes.
+                </p>
+           </div>
+          <div class="bim">
+             <img src="images/sidi_bouzid loc.jpg" title="localisation de Sidi Bouzid">
+          </div>
+        </div>
+    </section>
+    <div id="histoire" class="h1h">
+        <h1>histoire</h1>
+      </div>
+<section class="localisation">
+    <div class="local">
+        <div class="paralocal">
+          <p>La ville s'est développée sous le protectorat français : c'est en 1901 qu'est créée l'école franco-arabe d'El Hamma autour du noyau villageois de Saddaguia, devenue un faubourg de la ville. En 1943, elle est le théâtre d'une bataille importante, la bataille de Sidi Bouzid.
+            </p>
+       </div>
+      <div class="bim">
+         <img src="images/sidi bouzid hist.jfif" title="sidi bouzid 1943">
+      </div>
+    </div>
+</section>
+<div id="culture" class="h1c">
+    <h1>culture</h1>
+  </div>
+<section class="localisation">
+<div class="local">
+    <div class="paralocal">
+      <p>La plaine de Sidi Bouzid est consacrée à la culture des céréales, des arbres fruitiers et au maraîchage. Ainsi, la ville est le premier producteur de légumes du pays et l'un de ses principaux bassins laitiers. Elle commercialise également une race d'agneau élevée localement et qui a obtenu une AOC. Ceux du village voisin de Faïd sont particulièrement renommés.
+        </p>
+   </div>
+  <div class="bim">
+     <img src="images/sidi bou zid habit traditionnel.jpg" title="sidi bou zid habit traditionnel">
+  </div>
+</div>
+</section>
+<div id="photos" class="h1p">
+    <h1>photos</h1>
+  </div>
+  <div class="slider">
+     <span style="--i:1;"><img title="sidi bouzid" src="images/sidi bouzid.jpg"></span>
+     <span style="--i:2;"><img title="Djebel Mghila" src="images/Djebel Mghila.jpg"></span>
+     <span style="--i:3;"><img title="Djebel sidi ali bou aoun" src="images/Djebel sidi ali bou aoun.jpg"></span>
+     <span style="--i:4;"><img title="Djebel rihana" src="images/Djebel-rihana.jpg"></span>
+     <span style="--i:5;"><img title="sidi bouzid agriculture" src="images/sidi-bouzid agriculture.jpg"></span>
+     <span style="--i:6;"><img title="Sidi bouzid centre ville" src="images/Sidi_bouzid centre ville.jpg"></span>
+     <span style="--i:7;"><img title="paysage sidi bouzid" src="images/paysage sidi bouzid.jpg"></span>
+     <span style="--i:8;"><img title="oued leben sidi bouzid" src="images/oued-leben-sidi-bouzid.jpg"></span>
+  </div>
+  <div id="progress">
+    <span id="progress-value">&#x21EA;</span>
+ </div>
+<section class="footer">
+    <div class="links">
+        <a href="accueil.html">Accueil</a>
+       <a href="#localisation">Localisation</a>
+       <a href="#histoire">Histoire</a>
+       <a href="#culture">Culture</a>
+       <a href="#photos">Photos</a>
+    </div>
+    <div class="credit">
+        copyright protected &copy; 
+            <strong style="text-transform: uppercase;">|Ben Attaia Med Taha 2bi 2022-2023</strong>
+    </div>
+</section>
+<script>
+   let calcScrollValue=()=>{
+        let scrollProgress=document.getElementById("progress");
+        let progressValue=document.getElementById("progress-value");
+        let pos = document.documentElement.scrollTop;
+        let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        let scrollValue = Math.round ((pos*100)/calcHeight);
+        if (pos>100){
+          scrollProgress.style.display="grid";
+        }
+        else{
+          scrollProgress.style.display="none";
+        }
+        scrollProgress.addEventListener("click",()=>{
+          document.documentElement.scrollTop =0;
+        })
+        scrollProgress.style.background=`conic-gradient(#ad8042 ${scrollValue}%,#a4b75c ${scrollValue}%)`;
+      }
+      window.onscroll=calcScrollValue;
+      window.onload=calcScrollValue;
+      </script>
+</body>
+</html>

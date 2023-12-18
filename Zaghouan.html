@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Zaghouan.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f30e80016e.js" crossorigin="anonymous"></script>
+    <title>Zaghouan</title>
+</head>
+<body>
+    <header class="header">
+        <div class="imgh">
+             <img alt="+216" title="bienvenue en Tunisie " src="images/+216__1_-removebg-preview.png" class="logo">
+             <h3>Il est l'heure de visiter</h3>
+             <h1>ZAGHOUAN</h1>
+             <div class="banner">
+                <a href="#localisation"><span></span>en savoir plus</a>
+              </div>
+             <div class="menu">
+             <input type="checkbox" id="toggle">
+             <label for="toggle" id="show">
+                <div class="btn">
+                    <i title="menu" class="fa-solid fa-bars material-icons md-36 menuBtn"></i>
+                    <i title="menu"  class="fa-solid fa-xmark material-icons md-36 closeBtn"></i>
+                </div>
+                <div class="btn">
+                    <a class="lien" href="accueil.html"><i title="accueil" class="fa-solid fa-house material-icons md-36"></i></a>
+                </div>
+                <div class="btn">
+                    <a href="#localisation"><i title="localisation" class="fa-solid fa-location-dot material-icons md-36 "></i></a>
+                </div>
+                <div class="btn">
+                    <a href="#histoire"><i title="histoire" class="fa-sharp fa-solid fa-landmark-dome material-icons md-36"></i></a>
+                </div>
+                <div class="btn">
+                    <a href="#culture"><i title="culture" class="fa-solid fa-masks-theater material-icons md-36"></i></a>
+                </div>
+                <div class="btn">
+                    <a  href="#photos"><i title="photos" class="fa-solid fa-image material-icons md-36"></i></a>
+                </div>
+            </label>
+            </div> 
+       </div>
+    </header>
+    
+        <div id="localisation" class="h1">
+            <h1>Localisation</h1>
+          </div>
+    <section class="localisation">
+        <div class="local">
+            <div class="paralocal">
+              <p>Zaghouan  est une ville du nord de la Tunisie et le chef-lieu du gouvernorat du même nom. Établie sur le versant du djebel Zaghouan, elle domine une vaste plaine agricole. 20 798 habitants la peuplent en 2014.
+                </p>
+           </div>
+          <div class="bim">
+             <img src="images/zaghouan local.jpg" title="localisation de Zaghouan">
+          </div>
+        </div>
+    </section>
+    <div id="histoire" class="h1h">
+        <h1>histoire</h1>
+      </div>
+<section class="localisation">
+    <div class="local">
+        <div class="paralocal">
+          <p>À l'emplacement de l'antique Ziqua, dont il ne subsiste qu'une porte triomphale, Zaghouan est un bourg aux rues escarpées et coupées de petites places offrant des échappées sur la plaine. La ville est connue pour ses roses, notamment l'églantier (ancêtre botanique de la rose), qui étaient cultivées par les musulmans andalous (Morisques) chassés d'Espagne au xviie siècle lors de la Reconquista.
+            </p>
+       </div>
+      <div class="bim">
+         <img src="images/zaghouan hist.jpg" title="rue de Zaghouan environ 1900">
+      </div>
+    </div>
+</section>
+<div id="culture" class="h1c">
+    <h1>culture</h1>
+  </div>
+<section class="localisation">
+<div class="local">
+    <div class="paralocal">
+<p>Kâak warka de Zaghouan est une pâtisserie fine, délicate et parfumée parmi les plus savoureuses de Tunisie.
+
+    Elle est préparée  dans la plus pure tradition de Zaghouan, à base de pâte d’amande ou de pistache et d’eau d’églantine obtenue via la distillation de la fleur d’églantine et qui relève le goût du gâteau.  </p>
+   </div>
+  <div class="bim">
+     <img src="images/kaak warka.jpg" title="le kaak warka de zaghouan">
+  </div>
+</div>
+</section>
+<div id="photos" class="h1p">
+    <h1>photos</h1>
+  </div>
+  <div class="slider">
+     <span style="--i:1;"><img title="Aqueduc de Zaghouan" src="images/Aqueduc_de_Zaghouan.JPG"></span>
+     <span style="--i:2;"><img title="Dar zaghouan" src="images/Dar zaghouan.jpg"></span>
+     <span style="--i:3;"><img title="hamam zriba" src="images/hamam zriba.jpg"></span>
+     <span style="--i:4;"><img title="Mausolée de Sidi ali Azouz" src="images/Mausolée-de-Sidi-ali-Azouz-800x500.jpg"></span>
+     <span style="--i:5;"><img title="site archéologique de uthina" src="images/site archéologique de uthina.jpg"></span>
+     <span style="--i:6;"><img title="sidi medien" src="images/sidi medien.jpg"></span>
+     <span style="--i:7;"><img title="Sidi Bou Gabrine" src="images/Sîdî-Bou-Gabrîne-Zaghouan2.jpg"></span>
+     <span style="--i:8;"><img title="temple des eaux" src="images/temple des eaux.jpg"></span>
+  </div>
+  <div id="progress">
+    <span id="progress-value">&#x21EA;</span>
+ </div>
+<section class="footer">
+    <div class="links">
+        <a href="accueil.html">Accueil</a>
+       <a href="#localisation">Localisation</a>
+       <a href="#histoire">Histoire</a>
+       <a href="#culture">Culture</a>
+       <a href="#photos">Photos</a>
+    </div>
+    <div class="credit">
+        copyright protected &copy; 
+            <strong style="text-transform: uppercase;">|Ben Attaia Med Taha 2bi 2022-2023</strong>
+    </div>
+</section>
+<script>
+   let calcScrollValue=()=>{
+        let scrollProgress=document.getElementById("progress");
+        let progressValue=document.getElementById("progress-value");
+        let pos = document.documentElement.scrollTop;
+        let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        let scrollValue = Math.round ((pos*100)/calcHeight);
+        if (pos>100){
+          scrollProgress.style.display="grid";
+        }
+        else{
+          scrollProgress.style.display="none";
+        }
+        scrollProgress.addEventListener("click",()=>{
+          document.documentElement.scrollTop =0;
+        })
+        scrollProgress.style.background=`conic-gradient(#60d394 ${scrollValue}%,#c1fba4 ${scrollValue}%)`;
+      }
+      window.onscroll=calcScrollValue;
+      window.onload=calcScrollValue;
+      </script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="tunis.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f30e80016e.js" crossorigin="anonymous"></script>
+    <title>Tunis</title>
+</head>
+<body>
+    <header class="header">
+        <div class="imgh">
+             <img alt="+216" title="bienvenue en Tunisie " src="images/+216__1_-removebg-preview.png" class="logo">
+             <h3>Il est l'heure de visiter</h3>
+             <h1>TUNIS</h1>
+             <div class="banner">
+                <a href="#localisation"><span></span>en savoir plus</a>
+              </div>
+             <div class="menu">
+             <input type="checkbox" id="toggle">
+             <label for="toggle" id="show">
+                <div class="btn">
+                    <i title="menu" class="fa-solid fa-bars material-icons md-36 menuBtn"></i>
+                    <i title="menu"  class="fa-solid fa-xmark material-icons md-36 closeBtn"></i>
+                </div>
+                <div class="btn">
+                    <a class="lien" href="accueil.html"><i title="accueil" class="fa-solid fa-house material-icons md-36"></i></a>
+                </div>
+                <div class="btn">
+                    <a href="#localisation"><i title="localisation" class="fa-solid fa-location-dot material-icons md-36 "></i></a>
+                </div>
+                <div class="btn">
+                    <a href="#histoire"><i title="histoire" class="fa-sharp fa-solid fa-landmark-dome material-icons md-36"></i></a>
+                </div>
+                <div class="btn">
+                    <a href="#culture"><i title="culture" class="fa-solid fa-masks-theater material-icons md-36"></i></a>
+                </div>
+                <div class="btn">
+                    <a  href="#photos"><i title="photos" class="fa-solid fa-image material-icons md-36"></i></a>
+                </div>
+            </label>
+            </div> 
+       </div>
+    </header>
+    
+        <div id="localisation" class="h1">
+            <h1>Localisation</h1>
+          </div>
+    <section class="localisation">
+        <div class="local">
+            <div class="paralocal">
+              <p>Tunis est la ville la plus peuplée et la capitale de la Tunisie. Elle est aussi le chef-lieu du gouvernorat du même nom depuis sa création en 1956. Située au nord du pays, au fond du golfe de Tunis dont elle est séparée par le lac de Tunis, la cité s'étend sur la plaine côtière et les collines avoisinantes.
+                </p>
+           </div>
+          <div class="bim">
+             <img src="images/tunis loc.jpg" title="localisation de Tunis">
+          </div>
+        </div>
+    </section>
+    <div id="histoire" class="h1h">
+        <h1>histoire</h1>
+      </div>
+<section class="localisation">
+    <div class="local">
+        <div class="paralocal">
+          <p>L'année 1881, qui est celle de l'instauration du protectorat français, marque un tournant dans l'histoire de Tunis. La cité entre dans une ère de mutations rapides qui la transforment profondément en deux ou trois décennies. Restée pendant des siècles contenue derrière ses fortifications, la ville s'étend donc rapidement : elle se dédouble en une ville ancienne peuplée par la population arabe et une ville nouvelle peuplée par les nouveaux arrivants et différente de par sa structure avec la ville arabe. 
+            </p>
+       </div>
+      <div class="bim">
+         <img src="images/tunis hist la plae des légumes 1900.jpg" title="la plae des légumes 1900">
+      </div>
+    </div>
+</section>
+<div id="culture" class="h1c">
+    <h1>culture</h1>
+  </div>
+<section class="localisation">
+<div class="local">
+    <div class="paralocal">
+      <p>Tunis abrite des institutions musicales parmi les plus prestigieuses du pays. La troupe de La Rachidia y est fondée en 1934 pour sauvegarder la musique arabe originale et valoriser particulièrement la musique tunisienne à travers de nouvelles créations inspirées des règles de la musique ifriquienne. Elle se compose de 22 membres (joueurs d'instruments et chorale)
+        </p>
+   </div>
+  <div class="bim">
+     <img src="images/jebba tunisienne.jpg" title="jebba tunisienne">
+  </div>
+</div>
+</section>
+<div id="photos" class="h1p">
+    <h1>photos</h1>
+  </div>
+  <div class="slider">
+     <span style="--i:1;"><img title="Avenue Habib Bourguiba Tunis" src="images/Avenue-Habib-Bourguiba-Tunis.jpg"></span>
+     <span style="--i:2;"><img title="carthage" src="images/carthage.jpg"></span>
+     <span style="--i:3;"><img title="horloge de tunis" src="images/horloge.jpg"></span>
+     <span style="--i:4;"><img title="la goulette" src="images/la goulette.jpg"></span>
+     <span style="--i:5;"><img title="la médina de tunis" src="images/la médina de tunis.jpg"></span>
+     <span style="--i:6;"><img title="la marsa" src="images/la-marsa-tunisie.jpg"></span>
+     <span style="--i:7;"><img title="Mosquée Zitouna de tunis" src="images/Mosquée Zitouna de tunis.jfif"></span>
+     <span style="--i:8;"><img title="sidi bou said" src="images/tunis sidi bou said.jpg"></span>
+  </div>
+  <div id="progress">
+    <span id="progress-value">&#x21EA;</span>
+ </div>
+<section class="footer">
+    <div class="links">
+        <a href="accueil.html">Accueil</a>
+       <a href="#localisation">Localisation</a>
+       <a href="#histoire">Histoire</a>
+       <a href="#culture">Culture</a>
+       <a href="#photos">Photos</a>
+    </div>
+    <div class="credit">
+        copyright protected &copy; 
+            <strong style="text-transform: uppercase;">|Ben Attaia Med Taha 2bi 2022-2023</strong>
+    </div>
+</section>
+<script>
+   let calcScrollValue=()=>{
+        let scrollProgress=document.getElementById("progress");
+        let progressValue=document.getElementById("progress-value");
+        let pos = document.documentElement.scrollTop;
+        let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        let scrollValue = Math.round ((pos*100)/calcHeight);
+        if (pos>100){
+          scrollProgress.style.display="grid";
+        }
+        else{
+          scrollProgress.style.display="none";
+        }
+        scrollProgress.addEventListener("click",()=>{
+          document.documentElement.scrollTop =0;
+        })
+        scrollProgress.style.background=`conic-gradient(#ef233c ${scrollValue}%,#bd1f36 ${scrollValue}%)`;
+      }
+      window.onscroll=calcScrollValue;
+      window.onload=calcScrollValue;
+      </script>
+</body>
+</html>
